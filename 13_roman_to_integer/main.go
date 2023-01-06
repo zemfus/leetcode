@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 var roman = map[string]int{
 	"I": 1,
 	"V": 5,
@@ -24,12 +22,4 @@ func romanToInt(s string) int {
 		pre = buf
 	}
 	return sum
-}
-
-func main() {
-	var str string
-
-	for _, err := fmt.Scan(&str); err == nil; _, err = fmt.Scan(&str) {
-		fmt.Println(romanToInt(str))
-	}
 }
